@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://unpkg.com/vue@next"></script>
+    <title>OblOpg3</title>
+<style>
+    .wrapper {
+        margin: 20px;
+    }
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+    <div style="width:30%">
+        <div id="app">
+            <input id="input" v-model="word" placeholder="Type a word">
+            <button id="add" v-on:click=Add() type="button">Show it</button> 
+                <ol>
+                    <li>{{savedWord}}</li>
+                    <li>{{Upper}}</li>
+                    <li>{{Lower}}</li>
+                </ol>
+                <table class="table table-striped" width="25%">
+                    <tr>
+                        <td>1</td>
+                        <td>{{savedWord}}</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>{{Upper}}</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>{{Lower}}</td>
+                    </tr>
+                </table>
+        </div>
+    </div>
+</div>
+<script src="js/index.js"></script>
+</body>
+</html>
